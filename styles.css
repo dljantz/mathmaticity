@@ -1,0 +1,71 @@
+html {
+    background-color: green;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: yellow;
+}
+header {
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+nav {
+    display: block; /* SOMEHOW this changes it so that there isn't a white gap at the top of the page */
+    background-color:blue;
+    text-align: center;
+}
+ul {
+    margin: 0; /* had to add this to keep display:block in the nav ruleset from adding a space at the top*/
+    list-style-type: none;
+    background: purple;
+}
+/* formatting for navigation menu */
+nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+    background: red;
+}
+header .logo a{
+    background-color: orange;
+    background-image: url("images/fake-logo.png");
+    background-size: 50px;
+    background-repeat: no-repeat; /* prevent image from repeating*/
+    display: inline-block; /*have to specify this because <a> is inline by default, prevents me from specifying width*/
+    width: 50px;
+    height:50px;
+    text-indent: -9999999px; /*still available for screen readers*/
+    position: relative; /* allows it to control its position RELATIVE to where it wants to go */
+}
+    a {
+    color: aqua;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+footer {
+    background: navy;
+    margin: 0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+section {
+    padding-left: 10%;
+}
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 60px;
+    margin: 0;
+}
+img {
+    width: 300px;
+}
